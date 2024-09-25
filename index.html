@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela Belchior</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        .photo {
+            border-radius: 50%;
+            border: 5px solid #fff;
+            width: 250px;
+            height: 250px;
+            background-image: url('https://example.com/url-da-sua-imagem.jpeg'); /* Substitua pela URL que você publicou */
+            background-size: cover;
+            background-position: center;
+            animation: scaleIn 1.5s ease-in-out;
+        }
+
+        footer {
+            font-size: 1rem;
+            margin-top: 50px;
+            color: #999;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer span {
+            color: red;
+            font-size: 1.2rem;
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Victor Freire e Gabriela Belchior</h1>
+        <p>Nosso espaço Virtual</p>
+        <div class="photo"></div>
+        <footer>Feito por: Victor Freire <span>❤</span></footer>
+    </div>
+</body>
+</html>
